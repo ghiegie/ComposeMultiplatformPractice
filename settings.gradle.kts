@@ -1,4 +1,4 @@
-rootProject.name = "ComposeMultiPlatformPractice"
+rootProject.name = "ComposeMultiplatformPractice"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 pluginManagement {

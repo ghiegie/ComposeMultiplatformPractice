@@ -3,7 +3,6 @@ import org.jetbrains.compose.desktop.application.dsl.TargetFormat
 
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
-    
     alias(libs.plugins.jetbrainsCompose)
 }
 
@@ -20,6 +19,9 @@ kotlin {
             implementation(compose.ui)
             @OptIn(ExperimentalComposeLibrary::class)
             implementation(compose.components.resources)
+            implementation(compose.material3)
+            implementation(compose.materialIconsExtended)
+            implementation("androidx.compose.material3:material3-window-size-class:1.1.2")
         }
         desktopMain.dependencies {
             implementation(compose.desktop.currentOs)
